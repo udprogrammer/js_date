@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //give a date and time and loact time and standard time
+    let time = new Date();
+    console.log(time);
+
+    //give a time
+    console.log(new Date().getTime());
+
+    //give a date
+    console.log(new Date().getDate());
+
+    //give a hours
+    console.log(new Date().getHours());
+
+    //give a utc date (Coordinated Universal Time)
+    console.log(new Date().getUTCDate());
+
+    //give a current year
+    console.log(new Date().getFullYear());
+
+    //-----------set a time------------------
+
+    let a = new Date();
+    a.setFullYear(2002);
+    a.setDate(4);
+    a.setMonth(7);
+    a.setHours(5);
+    a.setMinutes(12);
+    a.setSeconds(0);
+    console.log(a);
+
+    //---------------local string date -----
+
+    //Fri Oct 13 2023
+    console.log(new Date().toDateString());
+
+    //10/13/2023
+    console.log(new Date().toLocaleDateString());
+  </script>
+</html>
